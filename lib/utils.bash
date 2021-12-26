@@ -15,9 +15,9 @@ fail() {
 }
 
 print_file() {
-    while read -r l || [ -n "${l}" ]; do
-        echo "$l";
-    done < ${1}
+  while read -r l || [ -n "${l}" ]; do
+    echo "$l"
+  done <${1}
 }
 
 sort_versions() {
@@ -27,7 +27,7 @@ sort_versions() {
 
 list_all_versions() {
   curl ${curl_opts[@]} https://pypi.org/pypi/${TOOL_NAME}/json |
-     jq -r '.releases | to_entries[] | .key'
+    jq -r '.releases | to_entries[] | .key'
 }
 
 install() {
@@ -37,10 +37,10 @@ install() {
 
   # check install type
   if [ "$type" != "version" ]; then
-      fail "only version installs are supported"
+    fail "only version installs are supported"
   fi
 
-  if command -v pip3 > /dev/null; then
+  if command -v pip3 >/dev/null; then
     echo "Installing ${TOOL_NAME} with pip3"
     pip3 install --target="${path}" ${TOOL_NAME}==${version}
   else
