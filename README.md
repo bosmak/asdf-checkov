@@ -3,7 +3,7 @@
 # asdf-checkov [![Build](https://github.com/bosmak/asdf-checkov/actions/workflows/build.yml/badge.svg)](https://github.com/bosmak/asdf-checkov/actions/workflows/build.yml) [![Lint](https://github.com/bosmak/asdf-checkov/actions/workflows/lint.yml/badge.svg)](https://github.com/bosmak/asdf-checkov/actions/workflows/lint.yml)
 
 
-[checkov](https://www.checkov.io/1.Welcome/What%20is%20Checkov.html) plugin for the [asdf version manager](https://asdf-vm.com).
+[checkov](https://github.com/bridgecrewio/checkov) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
@@ -17,8 +17,7 @@
 
 # Dependencies
 
-- `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- Check the [dependencies](lib/dependencies.txt) file
 
 # Install
 
