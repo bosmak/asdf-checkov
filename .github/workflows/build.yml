@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  plugin_test:
+  test:
     name: asdf plugin test
     strategy:
       matrix:
@@ -16,7 +16,10 @@ jobs:
           - macos-latest
     runs-on: ${{ matrix.os }}
     steps:
-      - name: asdf_plugin_test
-        uses: asdf-vm/actions/plugin-test@v1
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Plugin test
+        uses: asdf-vm/actions/plugin-test@v4
         with:
           command: checkov --help
