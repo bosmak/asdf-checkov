@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/bosmak/asdf-checkov/compare/v1.0.0...v1.0.1) (2026-06-12)
+
+
+### Bug Fixes
+
+* install checkov dependencies ([22f7cd2](https://www.github.com/bosmak/asdf-checkov/commit/22f7cd245049c0c668e85c31b6dada697d418f46))
+
 ## 1.0.0 (2021-12-26)
 
 
